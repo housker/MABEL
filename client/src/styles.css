@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* https://stackoverflow.com/questions/32329591/how-to-make-use-linear-gradient-border-only-for-top-and-bottom */
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%) 
+              0% 0 100% 0/3px 0 1px 0 stretch;
+    padding: 1rem 2rem;
+    /* margin: 0 2rem; */
+}
+
+a, button {
+    border: none;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+a:hover, button:hover {
+    cursor: default;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    line-height: 1.5;
+    border-style: solid;
+    border-image: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, #ccc 50%, rgba(0, 0, 0, 0) 100%) 
+    100% 0 0% 0/1px stretch;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+/* .ddoption {
+    background-color: blue;
+    color: orange;
+} */
+
+#ddinput {
+    border: none;
+}
+
+#ddselect {
+    max-width: 90%;
+    background-color: blue;
+    color: orange;
+}
+
+mat-sort-header {
+    text-align: center;
+}

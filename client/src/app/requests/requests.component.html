@@ -1,0 +1,11 @@
+<div>
+  <h3>Requests Outstanding <button #toggleEl (click)="toggleRequests()">{{ areBids ? "(Bids)" : "(Asks)"}}</button></h3>
+  <ul class="list">
+    <li *ngFor="let request of topTen">
+      <a (click)="openModal(request)">
+        {{request.amount | currency }} - <span style="font-style: italic">{{request.date | date: 'MM/dd/yy' }}</span>
+      </a>
+    </li>
+  </ul>
+  <button><a>See More</a></button>
+</div>

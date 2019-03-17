@@ -1,0 +1,59 @@
+.background {
+    height: 100%;
+    width: 100%;
+}
+
+canvas {
+    position: relative;
+    /* margin-top: 15%; */
+    max-height: 45hv;
+    z-index: 900;
+    /* overflow: visible; */
+}
+
+.wrapper {
+    position: absolute;
+    /* content: ''; */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    width: 100%;
+    height: 100%;
+    /* animation: opacity 1s; */
+    /* border: solid blue; */
+}
+
+#weather {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* content: ''; */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    width: 100%;
+    height: 100%;
+}
+
+.dayofwk {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    width: 100%;
+    height: 100%;
+    /* transform: translateX(-10px);
+    left: 50%; */
+    /* padding: 5px; */
+    margin-top: 100%;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.daynum {
+    position: relative;
+    /* margin-top: 15%; */
+    top: 35%;
+    text-align: center;
+    width: 100%;
+    /* height: 100%; */
+    /* transform: translateX(-10px);
+    left: 50%; */
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.1);
+}

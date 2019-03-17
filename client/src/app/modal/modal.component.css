@@ -1,0 +1,9 @@
+.modal-window {
+    width: 50vw;
+}
+
+#close {
+    position: fixed;
+    top: 0;
+    right: 0;
+}

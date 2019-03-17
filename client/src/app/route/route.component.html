@@ -1,0 +1,33 @@
+<div>
+  <div class="toolbar">
+    <button id="erase" (click)="geoService.erase()" [ngClass]="geoService.tool === 'erase' && 'selected' ">Erase</button>
+    <button id="marker" (click)="geoService.addMarker()" [ngClass]="geoService.tool === 'marker' && 'selected' ">Add Marker</button>
+    <button id="crop" (click)="geoService.plotCrops()" [ngClass]="geoService.tool === 'plotCrops' && 'selected' ">Add Plot</button>
+    <button id="edit" (click)="geoService.plotOther()" [ngClass]="geoService.tool === 'plotOther' && 'selected' ">Edit Plot</button>
+    <button id="livestock" (click)="geoService.plotLivestock()" [ngClass]="geoService.tool === 'plotLivestock' && 'selected' ">Plot Livestock</button>
+    <button id="other" (click)="geoService.plotOther()" [ngClass]="geoService.tool === 'plotOther' && 'selected' ">Plot Other</button>
+    <button id="route" (click)="geoService.adjustRoute()" [ngClass]="geoService.tool === 'route' && 'selected' ">Adjust Route</button>
+    <div #datepicker id="datepicker" *ngIf="geoService.tool != 'none'" [ngStyle]="{'order': ['erase', 'marker', 'plotCrops', 'plotLivestock', 'plotOther', 'route'].indexOf(geoService.tool) + 1}">
+      <mat-form-field>
+        <input matInput
+          (dateInput)="geoService.mapDate($event)"
+          [value]="geoService.date"
+          placeholder="date range"
+          [satDatepicker]="picker2"
+          formControlName="date">
+        <sat-datepicker #picker2 [rangeMode]="true">
+        </sat-datepicker>
+        <sat-datepicker-toggle matSuffix [for]="picker2"></sat-datepicker-toggle>
+      </mat-form-field>
+    </div>
+  </div>
+  <div id="mapwrapper">
+    <div #mapid id="mapid"></div>
+    <mat-slider id="slider"
+    thumbLabel
+    [displayWith]="formatLabel"
+    min="1"
+    max="100000"></mat-slider>
+  </div>
+
+</div>

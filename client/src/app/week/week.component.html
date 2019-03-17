@@ -1,0 +1,52 @@
+<div class="wrapper" style="text-align:center">
+  <div class="header">
+    <i class="material-icons arrow">keyboard_arrow_left</i>
+    <h3 id="title">{{today.day | number:'2.0' }} {{today.month}} {{today.year}}</h3>
+    <i class="material-icons arrow">keyboard_arrow_right</i>
+    <!-- <canvas #daylightEl id="daylight" width={{canWidth}} height="100" (window:resize)="resizeCanvas($event)"></canvas> -->
+  </div>
+  <div class="container">
+    <div class="bloc" 
+    [ngClass]="{ 'active': active === i }" 
+    *ngFor="let day of wkdays; let i = index" 
+    (mouseenter)="makeActive(i)"
+    [ngStyle]="setStyle(day.weather, day.sunrise, day.sunset)">
+          <app-day
+          [day]="day">
+          </app-day>
+    </div>
+  </div>
+</div>
+
+
+<!-- [height]="height"
+[width]="width" -->
+
+<!-- [notActive]="{ active === i ? 'active' : 'notActive' }" -->
+
+
+
+
+
+
+<!-- 
+<div class="container">
+    <div #contentEl id="content" class="masonry">
+      <div class="container" *ngFor="let wkday of wkdays; let i = index">
+        <div class="card">
+          <app-day
+          [height]="height"
+          [width]="width"
+          [wkday]="wkday">
+          </app-day>
+
+          <div>Day.date: {{day.date}}</div>
+          <div class="content">Day.schedule: {{day.schedule.date}}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+ 

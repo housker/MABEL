@@ -1,0 +1,40 @@
+<!-- <div class="panel">
+  <table>
+    <tr>
+      <th>Predicted</th>
+      <th>Actual</th>
+      <th>Difference</th>
+    </tr>
+    <tr>
+      <td>9,000</td>
+      <td>7,500</td>
+      <td>↓ 17%</td>
+    </tr>
+  </table>
+</div> -->
+
+<div id="table" class="panel">
+<!-- <div id="table"> -->
+    <mat-table [dataSource]="dataSource" matSort class="blist">
+      <ng-container matColumnDef="name">
+        <th *matHeaderCellDef mat-sort-header> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+      <ng-container matColumnDef="predicted">
+        <th *matHeaderCellDef mat-sort-header> Predicted </th>
+        <td mat-cell *matCellDef="let element"> {{element.predicted}} </td>
+      </ng-container>
+      <ng-container matColumnDef="actual">
+        <th *matHeaderCellDef mat-sort-header> Actual </th>
+        <td mat-cell *matCellDef="let element"> {{element.actual}} </td>
+      </ng-container>
+      <ng-container matColumnDef="difference">
+        <th *matHeaderCellDef mat-sort-header> Difference </th>
+        <td mat-cell *matCellDef="let element"> {{element.difference}} </td>
+      </ng-container>
+      <ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"><a (click)="openModal(buyer)"></a></tr>
+      </ng-container>
+    </mat-table>
+  </div>

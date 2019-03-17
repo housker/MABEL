@@ -1,0 +1,8 @@
+.container {
+    letter-spacing: 0.1rem;
+    /* color: blue; */
+    background-color: firebrick;
+    /* height: 3rem; */
+    padding: 1rem;
+    align-content: center;
+}

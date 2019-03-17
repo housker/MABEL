@@ -1,0 +1,50 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="wrapper">
+  <div class="header">
+      <app-nav></app-nav>
+  </div>
+
+
+  <div class="dashboard">
+    <div>
+      <app-alert></app-alert>
+      <app-week></app-week>
+    </div>
+      <div class="masonry">
+        <div class="masonry_column">
+          <div class="container" id="requests_container">
+            <div class="content">
+              <app-requests></app-requests>
+            </div>
+          </div>
+          <div class="container">
+            <div class="content">
+              <app-buyers></app-buyers>
+            </div>
+          </div>
+        </div>
+        <div class="masonry_column">
+            <div class="container">
+              <div class="content">
+                <app-comparison></app-comparison>
+              </div>
+            </div>
+            <div class="container">
+              <div class="content">
+                <app-forecast></app-forecast>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <app-route></app-route>
+        </div>
+      </div>
+  </div>
+
+
+</div>
+
+
+<router-outlet></router-outlet>

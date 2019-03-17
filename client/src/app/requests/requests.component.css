@@ -1,0 +1,48 @@
+/* https://stackoverflow.com/questions/32329591/how-to-make-use-linear-gradient-border-only-for-top-and-bottom */
+/* h3 {
+    text-transform: uppercase;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%) 
+              0% 0 100% 0/3px 0 1px 0 stretch;
+    padding: 1rem;
+} */
+
+.list {
+    column-count: 2;
+    -webkit-column-count: 2;
+    /* column-gap: 0.2rem; */
+    /* -webkit-column-gap: 0.2rem; */
+    /* padding: 0.2rem; */
+}
+
+/* .list > * { */
+    /* margin: 0.2 rem; */
+    /* border: solid black 1px; */
+/* } */
+
+.buyer {
+    margin: 5px;
+}
+
+.amount {
+    margin: 5px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    /* padding: 1rem; */
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+.env
+*/node_modules
+package-lock.json
+package.json
+testserver.js
+server
+node_modules/
+mockdata/

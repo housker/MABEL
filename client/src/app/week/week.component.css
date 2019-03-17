@@ -1,0 +1,72 @@
+.container {
+    position: relative;
+    /* border: solid plum; */
+    width: 100%;
+    height: 45vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    /* width: 0; */
+    height: 100px;
+}
+
+#title {
+    display: inline-block;
+}
+
+.bloc {
+    /* border: solid cornflowerblue; */
+    position: relative;
+    display: inline-flex;
+    columns: 7;
+    width: calc(10% - 5px);
+    height: calc(45vh - 4px);
+    margin: 2px;
+    background-size: cover;
+    background-position: center center;
+    transition: .5s all ease-in-out;
+    overflow: hidden;
+}
+
+.active {
+    position: relative;
+    width: calc(40% - 5px);
+    transition: .5s all ease-in-out;
+}
+
+/* remove shade from divs not active */
+/* .bloc::before {
+    opacity: 0;
+    position: absolute;
+    content: '';
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    animation: opacity 1s;
+} */
+
+/* add shade to active div */
+/* .active::before {
+    top: 0;
+    position: absolute;
+    content: '';
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    animation: opacity 1s;
+} */
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

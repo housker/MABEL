@@ -1,0 +1,71 @@
+#mapid { 
+    height: 92vh;
+    z-index: 1;
+}
+
+.toolbar {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+    min-width: 20%;
+    max-width: 8rem;
+    height: 92vh;
+}
+
+button {
+    flex: 1 1 100%;
+    margin: 1rem;
+    background-color: transparent;
+}
+
+.selected {
+    color: rgb(128, 160, 214);
+}
+
+#erase {
+    order: 1;
+}
+
+#marker {
+    order: 2;
+}
+
+#crop {
+    order: 3;
+}
+
+#livestock {
+    order: 4;
+}
+
+#other {
+    order: 5;
+}
+
+#route {
+    order: 6;
+}
+
+#mapwrapper {
+    position: relative;
+    width: 100%;
+}
+
+#slider {
+    position: absolute;
+    margin: 30px;
+    width: 70%;
+    margin: 0 auto;
+    bottom: 10px;
+    right: 10px;
+    z-index: 500;
+}
+
+/* #datepicker {
+    animation: 5s;
+} */
+
+
