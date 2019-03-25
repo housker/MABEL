@@ -40,8 +40,8 @@ Ensure you have installed Angular CLI, Go, and PostgreSQL.
 
 Create a database named "mabel" with the CREATE DATABASE command, and from the mabel/database directory run the following, replacing "adellehousker" with your username:
 ```
-dropdb mabel;
-createdb mabel;
+$ dropdb mabel;
+$ createdb mabel;
 $ psql -U adellehousker -d mabel < schema.sql
 ```
 
