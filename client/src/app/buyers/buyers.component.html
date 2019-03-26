@@ -1,13 +1,8 @@
 <div class="container">
   <h3 id="myBuyers" (click)="toggleBuyers()">{{ areBuyers ? 'My Buyers' : 'My Suppliers'}}</h3>
-
-
-      <mat-form-field id="search">
-        <input matInput placeholder="Search" autocomplete="off">
-      </mat-form-field>
-
-    
-
+    <mat-form-field id="search">
+      <input matInput placeholder="Search" autocomplete="off">
+    </mat-form-field>
   <ul class="blist">
       <li *ngFor="let buyer of buyers">
         <a (click)="openModal(buyer)">{{buyer.name}}</a>

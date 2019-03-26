@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 import { Weekday, Event, Bubble } from '../types';
 import { DashboardService } from '../dashboard.service';
 import { Chart } from 'chart.js';
-import { getRenderedText } from '@angular/core/src/render3';
+// import { getRenderedText } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-day',

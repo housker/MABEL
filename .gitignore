@@ -6,3 +6,6 @@ testserver.js
 server
 node_modules/
 mockdata/
+cert.pem
+key.pem
+testQueries.txt

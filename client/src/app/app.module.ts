@@ -20,6 +20,7 @@ import { ModalComponent } from './modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DayComponent } from './day/day.component';
 import { SatDatepickerModule, SatNativeDateModule } from 'saturn-datepicker';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SatDatepickerModule, SatNativeDateModule } from 'saturn-datepicker';
     NavDirective,
     ModalDirective,
     ModalComponent,
-    DayComponent
+    DayComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
