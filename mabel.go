@@ -58,17 +58,6 @@ type NewUser struct {
 	PwdHash         string `db:"pwdhash"`
 }
 
-// id UUID PRIMARY KEY,
-// firstname VARCHAR(50) NOT NULL,
-// lastname VARCHAR(50) NOT NULL,
-// businessname VARCHAR(50) NOT NULL,
-// businessaddress VARCHAR(50) NOT NULL,
-// businesscity VARCHAR(50) NOT NULL,
-// lat NUMERIC(8, 5),
-// lng NUMERIC(8, 5),
-// email VARCHAR(50) NOT NULL,
-// pwdhash VARCHAR(50) NOT NULL
-
 // key := []byte("super-secret-key")
 // store := sessions.NewCookieStore(key)
 
