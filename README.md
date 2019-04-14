@@ -36,7 +36,12 @@ Each feature lends itself to a microservices architecture programmed in Golang.
 
 ### Usage
 
-Ensure you have installed Angular CLI, Go, and PostgreSQL.
+Ensure you have installed Angular CLI, Go, and PostgreSQL with postGIS extension and Tiger data for California.
+
+```
+psql -U adellehousker -c "SELECT Loader_Generate_Script(ARRAY['CA'], 'sh')" -d test -tA > ca_script_load.sh
+bash ca_script_load.sh
+```
 
 Create a database named "mabel" with the CREATE DATABASE command, and from the mabel/database directory run the following, replacing "adellehousker" with your username:
 ```
