@@ -3,10 +3,10 @@ pipeline {
 
     stages {
         stage('Build') {
-            steps {
-                sh 'make' 
-                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
-            }
+            app = docker.build("housker/mabel/1.0.0")       
+        }
+        stage('Run') {
+            app.withRun("-p 443:443 housker/mabel:1.0.0")      
         }
     }
 }
